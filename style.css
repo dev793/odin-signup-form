@@ -6,6 +6,7 @@
 body {
     margin: 0;
     display: flex;
+    font-family: sans-serif;
 }
 
 img {
@@ -16,7 +17,7 @@ img {
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     height: 100vh;
-    width: 30vw;
+    width: 30%;
 }
 
 .logo-content {
@@ -33,4 +34,23 @@ img {
     font-family: "Norse Bold";
     color: white;
     font-size: 100px;
+}
+
+.main-content {
+    flex: auto;
+    padding-left: 50px;
+    padding-top: 20vh;
+
+    background-color: #f9fafb;
+}
+
+.cta {
+    margin-bottom: 50px;
+}
+
+.cta-content {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    width: 740px;
 }
