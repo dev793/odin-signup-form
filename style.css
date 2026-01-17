@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     display: flex;
     font-family: sans-serif;
 }
@@ -24,7 +25,7 @@ img {
     background-color: rgb(0, 0, 0, 0.4);
     height: 15vh;
     width: 100%;
-    margin-top: 25vh;
+    margin-top: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,10 +38,8 @@ img {
 }
 
 .main-content {
-    flex: auto;
-    padding-left: 50px;
-    padding-top: 20vh;
-
+    width: 70vw;
+    padding-top: 16vh;
     background-color: #f9fafb;
 }
 
@@ -53,4 +52,61 @@ img {
     font-weight: 600;
     margin-bottom: 24px;
     width: 740px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.form-title, label {
+    color: #1f2937;
+}
+
+
+.signup-form {
+    height: 30vh;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.cta, .signup-form, .account-creation {
+    padding-left: 50px;
+}
+
+.form-row {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+}
+
+input:focus {
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #b91c1c;
 }
